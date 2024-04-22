@@ -43,7 +43,7 @@ body {
     flex-direction: column;
     width: 225px;
     min-height: 85vh;
-    background-color:rgb(241, 168, 168);
+    background-color: white;
 }
 
 .menu__navigation-main {
