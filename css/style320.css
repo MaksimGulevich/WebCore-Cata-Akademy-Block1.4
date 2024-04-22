@@ -1,0 +1,152 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "TT lakes", sans-serif;
+    font-size: 16px;
+    color: #1B1C21;
+}
+
+/* Навигация в шапке меню menu__header*/
+
+.menu {
+    position: relative;
+    left:0px;
+    width: 320px;
+    min-height: 100vh;
+    background-color: white;
+    box-shadow: -15px 0 50px 0 black ;
+}
+
+.menu__header {
+    display: flex;
+    padding:18px 24px;
+}
+
+.menu__button-header {
+    margin: 0;
+    padding: 0;
+    margin-right:16px;
+    background-color:white;
+    border: none;
+    vertical-align: middle;
+}
+
+.menu__button-header:last-child {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+/*Главный блок бокового меню menu__main*/
+
+.menu__main {
+    display: flex;
+    flex-direction: column;
+    width: 225px;
+    min-height: 80vh;
+    background-color:white;
+}
+
+.menu__navigation-main {
+    margin: 0;
+    padding:4px 0 0 24px;
+    list-style: none;
+}
+
+.menu__link {
+    display:block;
+    position: relative;
+    margin-bottom: 32px;
+    text-decoration: none;
+    color: #1b1c21;
+    font-size: 16px;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+/*Интерактивность ссылок меню*/
+
+.menu__link:hover {
+    color:#7E7E82;
+}
+
+.menu__link:hover::before {
+position: absolute;
+left: -27px;
+top:-5px;
+content: "";
+display: block;
+position: absolute;
+width:8px;
+height: 32px;
+background-color: #41F6D7;
+border-radius:5px;
+}
+
+/*Блок контакты*/
+
+.menu__contacts {
+    margin-top: auto;
+    width: 196px;
+    padding:0 0 0 24px;
+}
+
+.menu__buttons {
+    margin-bottom: 16px;
+}
+
+.menu__button-contacts {
+    padding: 0;
+    margin-right:16px;
+    border: none;
+    background-color: white; 
+}
+
+.menu__mailto {
+    display: block;
+    margin-bottom: 12px;
+    color: #1B1C21;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.menu__tel {
+    color: #1B1C21;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 700;
+    word-spacing: -0.6px;
+    white-space:pre;
+    margin-bottom: 30px;
+}
+/* Выбор языка*/
+
+.menu__languages {
+display: flex;
+padding-left: 24px;
+margin-top: 40px;
+}
+
+.menu__button-languages[type="radio"] {
+   display:none;
+  }
+
+.menu__label-languages {
+    position: relative;
+    cursor: pointer;
+    margin-right:7px;
+    font-weight: 500;
+}
+
+/*Интерактивность выбора языка*/
+
+.menu__button-languages[id="lang-1"]:checked ~  .menu__label-languages[for="lang-1"]{
+    color:#7E7E82;
+}
+
+.menu__button-languages[id="lang-2"]:checked ~  .menu__label-languages[for="lang-2"]{
+    color:#7E7E82;
+}
+
+.menu__button-languages[id="lang-3"]:checked ~  .menu__label-languages[for="lang-3"]{
+    color:#7E7E82;
+}
