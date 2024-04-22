@@ -42,8 +42,8 @@ body {
     display: flex;
     flex-direction: column;
     width: 225px;
-    min-height: 80vh;
-    background-color:white;
+    min-height: 85vh;
+    background-color:rgb(241, 168, 168);
 }
 
 .menu__navigation-main {
