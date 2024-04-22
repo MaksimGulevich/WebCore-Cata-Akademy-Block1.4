@@ -6,7 +6,7 @@ body {
     color: #1B1C21;
 }
 
-/* Навигация в шапке меню menu__header*/
+/* Навигация в шапке меню. menu__header*/
 
 .menu {
     display: flex;
